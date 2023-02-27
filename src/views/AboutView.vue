@@ -93,6 +93,7 @@ export default {
         .then(response => {
           console.log(response.data);
           this.loading = false;
+          this.$router.push({ name: 'output'});
         })
         .catch(error => {
           console.log(error);

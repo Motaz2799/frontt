@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import UploadView from '../views/UploadView.vue'
 import AboutView from '../views/AboutView.vue'
+import OutputView from '../views/OutputView.vue'
 
 Vue.use(VueRouter)
 
@@ -18,7 +19,13 @@ export default new VueRouter({
            name: 'about',
           component: AboutView,
           props: true
-        }
+        },
+        {
+          path: '/output',
+         name: 'output',
+        component: OutputView
+      }
+
       ]
     })
 
